@@ -13,12 +13,6 @@
     "env": {
         
     },
-    "image": "heroku/python",
-    "buildpacks": [
-      {
-        "url": "https://github.com/heroku/heroku-buildpack-python.git"
-      }
-    ],
     "environments": {
       "test": {
         "scripts": {
