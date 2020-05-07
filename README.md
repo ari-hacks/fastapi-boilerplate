@@ -12,7 +12,7 @@ A Boilerplate FastApi project
 - [x] Travis CI configuration before deploy 
 - [x] API testing with `pytest` 
 - [x] Pipenv dependency management 
-- [ ] Docker containerization and deploy to Heroku   
+- [x] Docker containerization and deploy to Heroku   
 
 ## Set up
 
@@ -54,19 +54,18 @@ A Boilerplate FastApi project
     ```
 5. Start Docker container 
     ```bash
-        ➜ docker run -d --name fastapi-skeleton-container -p 80:80 app
+        ➜ docker run -d --name fastapi-skeleton-container -p 5000:5000 app
     ```
 6. Run the application
    ```bash 
-    Uvicorn running on http://0.0.0.0:80/users/health-check 
+    Uvicorn running on http://0.0.0.0:5000/users/health-check 
+    #or 
+    http://localhost:5000/users/health-check
    ```
-7. Deploy to Heroku 
-
-```bash
-uvicorn app.main:app --reload 
-
-#uvicorn runs on http://127.0.0.1:8000    
-```
+7. Check the logs 
+   ```bash 
+   ➜ docker container logs -f fastapi-skeleton-container
+   ```
 
 ## Deploy pre-configured (Docker Deploy)
 
