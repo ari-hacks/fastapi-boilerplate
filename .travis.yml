@@ -1,0 +1,14 @@
+language: python
+python:
+  - "3.8"
+  - "3.8-dev" 
+  #- "nightly"  # nightly build
+before_install:
+  - python3 --version
+  - pip3 install -U pip
+# env: 
+#     - BASE_URL=
+install:
+  - pip3 install -r requirements.txt
+script:
+  - pytest
