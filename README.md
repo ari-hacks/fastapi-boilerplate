@@ -20,6 +20,7 @@ A Boilerplate FastApi project
 ### Requirements
 
 - [Python](https://www.python.org/) 3.8.1
+- Pipenv
 
 ## Running Locally 
 
@@ -30,24 +31,15 @@ A Boilerplate FastApi project
         → cd fastapi-skeleton
     ```
 2. Pipenv dependency management 
-
-    ```bash
-        #add pipenv with python 3
-        → pipenv --three
-    ```
     ```bash
         #run pipenv 
         → pipenv shell
     ```
     ```bash
         #install dependencies  
-        → pipenv install fastapi
-        → pipenv install uvicorn
+        → pipenv install
     ```
-    ```bash
-        #add requirements.txt   
-        → pip3 freeze > requirements.txt
-    ```
+
 3. [Install & Run in docker](https://hub.docker.com/) 
 4. Build Docker Image 
     ```bash
