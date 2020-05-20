@@ -8,7 +8,7 @@ A Boilerplate FastApi project
 - [x] Boilerplate project structure  
 - [x] Asynchronous API 
 - [ ] User login and Authentication 
-- [ ] Postgres DB storage? Redis? 
+- [ ] MongoDb 
 - [ ] CRUD endpoints 
 - [x] Travis CI configuration before deploy 
 - [x] API testing with `pytest` 
