@@ -38,6 +38,8 @@ A Boilerplate FastApi project
     ```bash
         #install dependencies  
         → pipenv install
+        #run locally
+        uvicorn app.main:app --reload 
     ```
 
 3. [Install & Run in docker](https://hub.docker.com/) 
